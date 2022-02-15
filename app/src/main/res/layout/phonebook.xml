@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llcontact"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <ImageView
+            android:id="@+id/contact_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/contact_image"
+            android:src="@drawable/person2" />
+
+        <TextView
+            android:id="@+id/phoneName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/contact_image"
+            android:text="Aditya Gupta"
+            android:textColor="#2E2D2D"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/phonebooknumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_below="@+id/phoneName"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/contact_image"
+            android:text="6291105940" />
+
+        <ImageButton
+            android:id="@+id/sms"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#FFFFFA"
+
+            android:clickable="true"
+            android:src="@drawable/sms" />
+
+        <ImageButton
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/sms"
+            android:backgroundTint="#FFFFFa"
+            android:src="@drawable/quickcall" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
